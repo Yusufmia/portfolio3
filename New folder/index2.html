@@ -1,0 +1,198 @@
+<!-- 
+  <link  rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+<div id="main">
+  <div id="content">
+  
+  <span class="slide">
+    <a href="#" onClick="openSlideMenu()">
+    <i class="fas fa-bars"></i>
+    </a>
+  </span>
+  
+  <div id="menu" class="nav">
+    <a href="#" class="close" onClick="closeSlideMenu()">
+    <i class="fas fa-times"></i>
+    </a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+</div>
+
+
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s;
+}
+
+.nav a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 25px;
+}
+.nav a:hover {
+  color: #fff;
+  tansition: 0.4s;
+}
+
+.nav .close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+.slide a {
+  color: #000;
+  font-size: 36px;
+}
+
+#content {
+  padding: 20px;
+  transition: margin-left 0.7s;
+  overflow: hidden;
+}
+
+#main {
+  
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+#text {
+  width: 90%;
+  padding: 5%;
+}
+</style>
+
+
+<script>
+  function openSlideMenu () {
+  document.getElementById('menu').style.width = '250px';
+  document.getElementById('content').style.marginLeft = '250px';
+}
+
+function closeSlideMenu () {
+  document.getElementById('menu').style.width = '0';
+  document.getElementById('content').style.marginLeft = '0';
+}
+</script> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<button id="btn1">Toggle  </button>
+<button id="btn2">helo</button>
+<br><br>
+<style>
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+  #mypara1{
+    background-color: red;
+    width: 200px;
+    height: 300px;
+    overflow-x: hidden; 
+  transition: 0.5s;
+left: 0;
+position: fixed;
+opacity: 1;
+top: 30;
+position: absolute;
+height: 100%;
+transform: translateX(0)!important ;
+
+  }
+
+
+
+
+
+  #mypara2{
+    background-color: rgb(12, 4, 4);
+    width: 200px;
+    height: 300px;
+transition: .6s;
+right: 2rem;
+  }
+</style>
+
+ 
+ 
+<div id="mypara1"  >
+  hello
+</div>  
+<div id="mypara2" style="display: none;">
+  hello
+</div>
+ 
+ 
+  
+<script>
+// $(document).ready(function(){
+//   $("#btn1").click(function(){
+//     $("#mypara1").toggle( );
+//     $("#mypara2").hide( );
+     
+
+//   });
+// });
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#mypara1").hide( );
+    $("#mypara2").toggle( );
+    
+     
+  });
+});
+</script>
+
+ 
+</body>
+</html>
